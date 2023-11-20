@@ -3,7 +3,7 @@
     {
         function fetch_all()
         {
-            $this->db->order_by('id','DESC');
+            $this->db->order_by('id','ASC');
             $query = $this->db->get('telepon');
             return $query->result_array();
         }
